@@ -37,4 +37,10 @@ struct Previews_ContentView_LibraryContent: LibraryContentProvider {
                     category: .control
         )
     }
+    @LibraryContentBuilder
+    func modifiers(base: any View) -> [LibraryItem] {
+        LibraryItem(base.opacity(0.2),
+        title: "Ghostly",
+                    category: .effect)
+    }
 }
