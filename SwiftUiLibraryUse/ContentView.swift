@@ -23,6 +23,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
         Circle().foregroundColor(.green)
+            .opacity(0.2)
     }
 }
 
