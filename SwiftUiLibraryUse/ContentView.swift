@@ -22,11 +22,19 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        Circle().foregroundColor(.green)
     }
 }
 
 struct Previews_ContentView_LibraryContent: LibraryContentProvider {
     var views: [LibraryItem] {
-        LibraryItem(Circle().foregroundColor(.green))
+        LibraryItem(Circle().foregroundColor(.green),
+        title: "greenCircle",
+                    category: .control
+        )
+        LibraryItem(Rectangle().foregroundColor(.red),
+                    title:"redSquare",
+                    category: .control
+        )
     }
 }
