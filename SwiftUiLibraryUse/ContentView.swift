@@ -24,3 +24,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Previews_ContentView_LibraryContent: LibraryContentProvider {
+    var views: [LibraryItem] {
+        LibraryItem(Circle().foregroundColor(.green))
+    }
+}
